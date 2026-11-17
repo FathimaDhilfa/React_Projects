@@ -1,0 +1,22 @@
+.about-me{
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto 0;
+    align-items: center;
+}
+
+.abt-img{
+    height: 700px;
+    width: 500px;
+    object-fit: cover;
+}
+
+.abt-content{
+    padding: 20px;
+}
+
+@media (max-width:768px){
+    .about-me{
+        flex-direction: column;
+    }
+}
