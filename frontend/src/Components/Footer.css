@@ -1,0 +1,149 @@
+
+/* ================================
+   ZENORA FASHION FOOTER
+================================ */
+
+.zenora-footer {
+  background: #080808;
+  color: #fff;
+  padding: 65px 5% 20px;
+  margin-top: 60px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 55px;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding-bottom: 55px;
+}
+
+/* Brand */
+
+.footer-logo {
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin: 0 0 20px;
+}
+
+.footer-brand p {
+  color: #c5c5c5;
+  font-size: 15px;
+  line-height: 1.8;
+  max-width: 320px;
+  margin-bottom: 22px;
+}
+
+.footer-contact a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Footer Columns */
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 17px;
+}
+
+.footer-column h3 {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  margin: 0 0 8px;
+  color: #fff;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: #d0d0d0;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.footer-column a:hover,
+.footer-contact a:hover {
+  color: #fff;
+}
+
+/* Footer Bottom */
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.footer-bottom p {
+  color: #aaa;
+  font-size: 13px;
+  margin: 0;
+}
+
+.back-to-top {
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 1px;
+  transition: opacity 0.3s ease;
+}
+
+.back-to-top:hover {
+  opacity: 0.6;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 550px) {
+  .zenora-footer {
+    padding: 45px 6% 20px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 35px 20px;
+  }
+
+  .footer-logo {
+    font-size: 27px;
+  }
+
+  .footer-brand p {
+    font-size: 13px;
+  }
+
+  .footer-column h3 {
+    font-size: 12px;
+  }
+
+  .footer-column a {
+    font-size: 13px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+}
